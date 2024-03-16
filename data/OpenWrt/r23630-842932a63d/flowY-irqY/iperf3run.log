@@ -1,0 +1,884 @@
+#- -----------------------------------------------------------------------------
+#- 
+#- Time now          :    2024-03-12T1937
+#- Estimated Time    :    2024-03-12T20:59   01h22m20s, (82 minutes)
+#- 
+#- -----------------------------------------------------------------------------
+TCP MTU: 0128
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 88 -T '2024-03-12 19:37 TCP UP MTU0128' --logfile TCP_UP_MTU0128.json
++ set +x
+sleep....... 54321
+ETA: 01h21m15s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 88 -T '2024-03-12 19:38 TCP DL MTU0128' --logfile TCP_DL_MTU0128.json -R
++ set +x
+sleep....... 54321
+ETA: 01h20m10s
+
+==============
+
+
+TCP MTU: 0146
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 106 -T '2024-03-12 19:39 TCP UP MTU0146' --logfile TCP_UP_MTU0146.json
++ set +x
+sleep....... 54321
+ETA: 01h19m05s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 106 -T '2024-03-12 19:40 TCP DL MTU0146' --logfile TCP_DL_MTU0146.json -R
++ set +x
+sleep....... 54321
+ETA: 01h18m00s
+
+==============
+
+
+TCP MTU: 0256
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 216 -T '2024-03-12 19:41 TCP UP MTU0256' --logfile TCP_UP_MTU0256.json
++ set +x
+sleep....... 54321
+ETA: 01h16m55s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 216 -T '2024-03-12 19:42 TCP DL MTU0256' --logfile TCP_DL_MTU0256.json -R
++ set +x
+sleep....... 54321
+ETA: 01h15m50s
+
+==============
+
+
+TCP MTU: 0354
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 314 -T '2024-03-12 19:43 TCP UP MTU0354' --logfile TCP_UP_MTU0354.json
++ set +x
+sleep....... 54321
+ETA: 01h14m45s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 314 -T '2024-03-12 19:44 TCP DL MTU0354' --logfile TCP_DL_MTU0354.json -R
++ set +x
+sleep....... 54321
+ETA: 01h13m40s
+
+==============
+
+
+TCP MTU: 0512
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 472 -T '2024-03-12 19:46 TCP UP MTU0512' --logfile TCP_UP_MTU0512.json
++ set +x
+sleep....... 54321
+ETA: 01h12m35s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 472 -T '2024-03-12 19:47 TCP DL MTU0512' --logfile TCP_DL_MTU0512.json -R
++ set +x
+sleep....... 54321
+ETA: 01h11m30s
+
+==============
+
+
+TCP MTU: 1024
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 984 -T '2024-03-12 19:48 TCP UP MTU1024' --logfile TCP_UP_MTU1024.json
++ set +x
+sleep....... 54321
+ETA: 01h10m25s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 984 -T '2024-03-12 19:49 TCP DL MTU1024' --logfile TCP_DL_MTU1024.json -R
++ set +x
+sleep....... 54321
+ETA: 01h09m20s
+
+==============
+
+
+TCP MTU: 1280
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1240 -T '2024-03-12 19:50 TCP UP MTU1280' --logfile TCP_UP_MTU1280.json
++ set +x
+sleep....... 54321
+ETA: 01h08m15s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1240 -T '2024-03-12 19:51 TCP DL MTU1280' --logfile TCP_DL_MTU1280.json -R
++ set +x
+sleep....... 54321
+ETA: 01h07m10s
+
+==============
+
+
+TCP MTU: 1360
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1320 -T '2024-03-12 19:52 TCP UP MTU1360' --logfile TCP_UP_MTU1360.json
++ set +x
+sleep....... 54321
+ETA: 01h06m05s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1320 -T '2024-03-12 19:53 TCP DL MTU1360' --logfile TCP_DL_MTU1360.json -R
++ set +x
+sleep....... 54321
+ETA: 01h05m00s
+
+==============
+
+
+TCP MTU: 1400
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1360 -T '2024-03-12 19:54 TCP UP MTU1400' --logfile TCP_UP_MTU1400.json
++ set +x
+sleep....... 54321
+ETA: 01h03m55s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1360 -T '2024-03-12 19:55 TCP DL MTU1400' --logfile TCP_DL_MTU1400.json -R
++ set +x
+sleep....... 54321
+ETA: 01h02m50s
+
+==============
+
+
+TCP MTU: 1440
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1400 -T '2024-03-12 19:56 TCP UP MTU1440' --logfile TCP_UP_MTU1440.json
++ set +x
+sleep....... 54321
+ETA: 01h01m45s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1400 -T '2024-03-12 19:58 TCP DL MTU1440' --logfile TCP_DL_MTU1440.json -R
++ set +x
+sleep....... 54321
+ETA: 01h00m40s
+
+==============
+
+
+TCP MTU: 1460
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1420 -T '2024-03-12 19:59 TCP UP MTU1460' --logfile TCP_UP_MTU1460.json
++ set +x
+sleep....... 54321
+ETA: 00h59m35s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1420 -T '2024-03-12 20:00 TCP DL MTU1460' --logfile TCP_DL_MTU1460.json -R
++ set +x
+sleep....... 54321
+ETA: 00h58m30s
+
+==============
+
+
+TCP MTU: 1500
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:01 TCP UP MTU1500' --logfile TCP_UP_MTU1500.json
++ set +x
+sleep....... 54321
+ETA: 00h57m25s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:02 TCP DL MTU1500' --logfile TCP_DL_MTU1500.json -R
++ set +x
+sleep....... 54321
+ETA: 00h56m20s
+
+==============
+
+
+UDP MTU: 0128
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 100 -T '2024-03-12 20:03 UDP UP MTU0128' -u -b 200M --logfile UDP_UP_MTU0128.json
++ set +x
+sleep....... 54321
+ETA: 00h55m15s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 100 -T '2024-03-12 20:04 UDP DL MTU0128' -u -b 200M --logfile UDP_DL_MTU0128.json -R
++ set +x
+sleep....... 54321
+ETA: 00h54m10s
+
+==============
+
+
+UDP MTU: 0146
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 118 -T '2024-03-12 20:05 UDP UP MTU0146' -u -b 200M --logfile UDP_UP_MTU0146.json
++ set +x
+sleep....... 54321
+ETA: 00h53m05s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 118 -T '2024-03-12 20:06 UDP DL MTU0146' -u -b 200M --logfile UDP_DL_MTU0146.json -R
++ set +x
+sleep....... 54321
+ETA: 00h52m00s
+
+==============
+
+
+UDP MTU: 0256
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 228 -T '2024-03-12 20:07 UDP UP MTU0256' -u -b 200M --logfile UDP_UP_MTU0256.json
++ set +x
+sleep....... 54321
+ETA: 00h50m55s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 228 -T '2024-03-12 20:08 UDP DL MTU0256' -u -b 200M --logfile UDP_DL_MTU0256.json -R
++ set +x
+sleep....... 54321
+ETA: 00h49m50s
+
+==============
+
+
+UDP MTU: 0354
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 326 -T '2024-03-12 20:09 UDP UP MTU0354' -u -b 200M --logfile UDP_UP_MTU0354.json
++ set +x
+sleep....... 54321
+ETA: 00h48m45s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 326 -T '2024-03-12 20:11 UDP DL MTU0354' -u -b 200M --logfile UDP_DL_MTU0354.json -R
++ set +x
+sleep....... 54321
+ETA: 00h47m40s
+
+==============
+
+
+UDP MTU: 0512
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 484 -T '2024-03-12 20:12 UDP UP MTU0512' -u -b 200M --logfile UDP_UP_MTU0512.json
++ set +x
+sleep....... 54321
+ETA: 00h46m35s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 484 -T '2024-03-12 20:13 UDP DL MTU0512' -u -b 200M --logfile UDP_DL_MTU0512.json -R
++ set +x
+sleep....... 54321
+ETA: 00h45m30s
+
+==============
+
+
+UDP MTU: 1024
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 996 -T '2024-03-12 20:14 UDP UP MTU1024' -u -b 200M --logfile UDP_UP_MTU1024.json
++ set +x
+sleep....... 54321
+ETA: 00h44m25s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 996 -T '2024-03-12 20:15 UDP DL MTU1024' -u -b 200M --logfile UDP_DL_MTU1024.json -R
++ set +x
+sleep....... 54321
+ETA: 00h43m20s
+
+==============
+
+
+UDP MTU: 1280
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1252 -T '2024-03-12 20:16 UDP UP MTU1280' -u -b 200M --logfile UDP_UP_MTU1280.json
++ set +x
+sleep....... 54321
+ETA: 00h42m15s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1252 -T '2024-03-12 20:17 UDP DL MTU1280' -u -b 200M --logfile UDP_DL_MTU1280.json -R
++ set +x
+sleep....... 54321
+ETA: 00h41m10s
+
+==============
+
+
+UDP MTU: 1360
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1332 -T '2024-03-12 20:18 UDP UP MTU1360' -u -b 200M --logfile UDP_UP_MTU1360.json
++ set +x
+sleep....... 54321
+ETA: 00h40m05s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1332 -T '2024-03-12 20:19 UDP DL MTU1360' -u -b 200M --logfile UDP_DL_MTU1360.json -R
++ set +x
+sleep....... 54321
+ETA: 00h39m00s
+
+==============
+
+
+UDP MTU: 1400
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1372 -T '2024-03-12 20:20 UDP UP MTU1400' -u -b 200M --logfile UDP_UP_MTU1400.json
++ set +x
+sleep....... 54321
+ETA: 00h37m55s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1372 -T '2024-03-12 20:21 UDP DL MTU1400' -u -b 200M --logfile UDP_DL_MTU1400.json -R
++ set +x
+sleep....... 54321
+ETA: 00h36m50s
+
+==============
+
+
+UDP MTU: 1440
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1412 -T '2024-03-12 20:23 UDP UP MTU1440' -u -b 200M --logfile UDP_UP_MTU1440.json
++ set +x
+sleep....... 54321
+ETA: 00h35m45s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1412 -T '2024-03-12 20:24 UDP DL MTU1440' -u -b 200M --logfile UDP_DL_MTU1440.json -R
++ set +x
+sleep....... 54321
+ETA: 00h34m40s
+
+==============
+
+
+UDP MTU: 1460
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1432 -T '2024-03-12 20:25 UDP UP MTU1460' -u -b 200M --logfile UDP_UP_MTU1460.json
++ set +x
+sleep....... 54321
+ETA: 00h33m35s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1432 -T '2024-03-12 20:26 UDP DL MTU1460' -u -b 200M --logfile UDP_DL_MTU1460.json -R
++ set +x
+sleep....... 54321
+ETA: 00h32m30s
+
+==============
+
+
+UDP MTU: 1500
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:27 UDP UP MTU1500' -u -b 200M --logfile UDP_UP_MTU1500.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h31m25s
+
+==============
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:28 UDP DL MTU1500' -u -b 200M --logfile UDP_DL_MTU1500.json -R
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h30m20s
+
+==============
+
+
+TCP throughput: 0025M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:29 TCP TH0025M' -b 5M --logfile TH0025M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h29m15s
+
+==============
+
+
+UDP throughput: 0025M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:30 UDP TH0025M' -u -b 5M --logfile TH0025M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h28m10s
+
+==============
+
+
+TCP throughput: 0050M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:31 TCP TH0050M' -b 10M --logfile TH0050M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h27m05s
+
+==============
+
+
+UDP throughput: 0050M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:32 UDP TH0050M' -u -b 10M --logfile TH0050M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h26m00s
+
+==============
+
+
+TCP throughput: 0075M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:33 TCP TH0075M' -b 15M --logfile TH0075M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h24m55s
+
+==============
+
+
+UDP throughput: 0075M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:34 UDP TH0075M' -u -b 15M --logfile TH0075M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h23m50s
+
+==============
+
+
+TCP throughput: 0100M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:36 TCP TH0100M' -b 20M --logfile TH0100M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h22m45s
+
+==============
+
+
+UDP throughput: 0100M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:37 UDP TH0100M' -u -b 20M --logfile TH0100M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h21m40s
+
+==============
+
+
+TCP throughput: 0125M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:38 TCP TH0125M' -b 25M --logfile TH0125M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h20m35s
+
+==============
+
+
+UDP throughput: 0125M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:39 UDP TH0125M' -u -b 25M --logfile TH0125M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h19m30s
+
+==============
+
+
+TCP throughput: 0150M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:40 TCP TH0150M' -b 30M --logfile TH0150M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h18m25s
+
+==============
+
+
+UDP throughput: 0150M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:41 UDP TH0150M' -u -b 30M --logfile TH0150M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h17m20s
+
+==============
+
+
+TCP throughput: 0175M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:42 TCP TH0175M' -b 35M --logfile TH0175M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h16m15s
+
+==============
+
+
+UDP throughput: 0175M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:43 UDP TH0175M' -u -b 35M --logfile TH0175M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h15m10s
+
+==============
+
+
+TCP throughput: 0200M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:44 TCP TH0200M' -b 40M --logfile TH0200M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h14m05s
+
+==============
+
+
+UDP throughput: 0200M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:45 UDP TH0200M' -u -b 40M --logfile TH0200M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h13m00s
+
+==============
+
+
+TCP throughput: 0225M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:46 TCP TH0225M' -b 45M --logfile TH0225M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h11m55s
+
+==============
+
+
+UDP throughput: 0225M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:48 UDP TH0225M' -u -b 45M --logfile TH0225M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h10m50s
+
+==============
+
+
+TCP throughput: 0250M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:49 TCP TH0250M' -b 50M --logfile TH0250M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h09m45s
+
+==============
+
+
+UDP throughput: 0250M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:50 UDP TH0250M' -u -b 50M --logfile TH0250M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h08m40s
+
+==============
+
+
+TCP throughput: 0275M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:51 TCP TH0275M' -b 55M --logfile TH0275M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h07m35s
+
+==============
+
+
+UDP throughput: 0275M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:52 UDP TH0275M' -u -b 55M --logfile TH0275M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h06m30s
+
+==============
+
+
+TCP throughput: 0300M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:53 TCP TH0300M' -b 60M --logfile TH0300M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h05m25s
+
+==============
+
+
+UDP throughput: 0300M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:54 UDP TH0300M' -u -b 60M --logfile TH0300M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h04m20s
+
+==============
+
+
+TCP throughput: 0325M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:55 TCP TH0325M' -b 65M --logfile TH0325M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h03m15s
+
+==============
+
+
+UDP throughput: 0325M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:56 UDP TH0325M' -u -b 65M --logfile TH0325M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h02m10s
+
+==============
+
+
+TCP throughput: 0350M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -M 1460 -T '2024-03-12 20:57 TCP TH0350M' -b 70M --logfile TH0350M_TCP.json
++ set +x
+sleep....... 54321
+ETA: 00h01m05s
+
+==============
+
+
+UDP throughput: 0350M
+
+
+++ date '+%Y-%m-%d %H:%M'
++ iperf3 --json --get-server-output --parallel 5 --bidir -c 192.0.2.1 -t 60 -l 1472 -T '2024-03-12 20:58 UDP TH0350M' -u -b 70M --logfile TH0350M_UDP.json
+warning: UDP block size 1472 exceeds TCP MSS 1448, may result in fragmentation / drops
++ set +x
+sleep....... 54321
+ETA: 00h00m00s
+
+==============
+
+
+Archive... 2024-03-12T1937_iperf3_test.tar.gz
++ cd ../
+++ basename ./iperf3run.sh
++ tar -zcvf 2024-03-12T1937_iperf3_test.tar.gz 2024-03-12T1937 iperf3run.sh
+2024-03-12T1937/
+2024-03-12T1937/_ip-link.txt
+2024-03-12T1937/TH0125M_UDP.json
+2024-03-12T1937/UDP_UP_MTU0256.json
+2024-03-12T1937/TH0325M_UDP.json
+2024-03-12T1937/UDP_UP_MTU0128.json
+2024-03-12T1937/TCP_UP_MTU0512.json
+2024-03-12T1937/UDP_DL_MTU1500.json
+2024-03-12T1937/UDP_UP_MTU1460.json
+2024-03-12T1937/TH0100M_UDP.json
+2024-03-12T1937/TCP_DL_MTU1500.json
+2024-03-12T1937/UDP_DL_MTU0354.json
+2024-03-12T1937/UDP_DL_MTU1460.json
+2024-03-12T1937/TCP_DL_MTU0354.json
+2024-03-12T1937/TH0150M_TCP.json
+2024-03-12T1937/TH0250M_TCP.json
+2024-03-12T1937/_routel.txt
+2024-03-12T1937/UDP_DL_MTU1024.json

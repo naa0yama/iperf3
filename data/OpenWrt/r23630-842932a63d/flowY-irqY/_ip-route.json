@@ -1,0 +1,37 @@
+[
+  {
+    "dst": "default",
+    "gateway": "192.168.1.1",
+    "dev": "enp2s0",
+    "protocol": "dhcp",
+    "prefsrc": "192.168.1.213",
+    "metric": 100,
+    "flags": []
+  },
+  {
+    "dst": "10.2.21.0/24",
+    "dev": "enxc436c0ea7158",
+    "protocol": "kernel",
+    "scope": "link",
+    "prefsrc": "10.2.21.23",
+    "flags": []
+  },
+  {
+    "dst": "192.168.1.0/24",
+    "dev": "enp2s0",
+    "protocol": "kernel",
+    "scope": "link",
+    "prefsrc": "192.168.1.213",
+    "metric": 100,
+    "flags": []
+  },
+  {
+    "dst": "192.168.1.1",
+    "dev": "enp2s0",
+    "protocol": "dhcp",
+    "scope": "link",
+    "prefsrc": "192.168.1.213",
+    "metric": 100,
+    "flags": []
+  }
+]
