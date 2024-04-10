@@ -22,7 +22,7 @@ INTERVAL_SECOND=60
 PARALLEL_INT=5
 WAIT_SECOND=5
 TEST_TIME=$(date '+%Y-%m-%dT%H%M')
-mapfile -t THROUGHPUT_BANDWIDTH < <(seq 100 10 240)
+mapfile -t THROUGHPUT_BANDWIDTH < <(seq 100 10 190)
 MTUS=(128 146 256 354 512 1024 1280 1360 1400 1440 1460 1500)
 CMD_OPTIONS=(
   "--json"
@@ -34,12 +34,14 @@ mkdir -p "${TEST_TIME}"
 cd "${TEST_TIME}"
 
 # Gather
+set -x
 ip -j link                > "_ip-link.json"
 ip    link                > "_ip-link.txt"
 ip -j route               > "_ip-route.json"
 ip    route               > "_ip-route.txt"
 routel                    > "_routel.txt"
-tracepath -b "${IP}"      > "_tracepath.txt"
+tracepath -m 5 -n -b "${IP}" | tee "_tracepath.txt"
+set +x
 
 set +e
 if ping -c 1 "${IP}" > /dev/null 2>&1
