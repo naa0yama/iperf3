@@ -4,7 +4,7 @@ set -e
 
 if [ -z "$1" ]; then
     echo "Comment is required."
-    echo "Usage: $(basename "${0}") rXXXXX-YYYYYYYYYY [ all | tcp | udp | th ] (192.0.2.1)"
+    echo "Usage: $(basename "${0}") comment [ all | tcp | udp | th ] (192.0.2.1)"
     exit 1
 fi
 
@@ -334,14 +334,17 @@ function main() {
 
     ("tcp")
       iperf3_tcp
+      gen_csv "${ARGS}"
       ;;
 
     ("udp")
       iperf3_udp
+      gen_csv "${ARGS}"
       ;;
 
     ("th")
       iperf3_th
+      gen_csv "${ARGS}"
       ;;
 
     (*)
