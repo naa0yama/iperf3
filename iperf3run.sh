@@ -299,7 +299,7 @@ function iperf3_tcp() {
   for i in "${MTUS[@]}"
   do
     local __mtu="0000${i}"
-    echo -e "================================================================================\n\n"
+    echo -e "================================================================================"
     echo -e "= TCP MTU: ${__mtu: -4}\n\n"
     set -x
     # Client -> Server
@@ -321,7 +321,7 @@ function iperf3_udp() {
   for i in "${MTUS[@]}"
   do
     local __mtu="0000${i}"
-    echo -e "================================================================================\n\n"
+    echo -e "================================================================================"
     echo -e "= UDP MTU: ${__mtu: -4}\n\n"
     set -x
     # Client -> Server
@@ -343,7 +343,7 @@ function iperf3_th() {
   for th_bandwidth in "${THROUGHPUT_BANDWIDTH[@]}"
   do
     local __th_bandwidth="0000$(( th_bandwidth * PARALLEL_INT ))"
-    echo -e "================================================================================\n\n"
+    echo -e "================================================================================"
     echo -e "= TCP throughput: ${__th_bandwidth: -4}M\n\n"
     set -x
     iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${IP}" -t "${INTERVAL_SECOND}" -M $(( 1500 - 40 )) \
@@ -366,7 +366,7 @@ function iperf3_th_byte() {
   for i in "${MTUS[@]}"
   do
     local __mtu="0000${i}"
-    echo -e "================================================================================\n\n"
+    echo -e "================================================================================"
     echo -e "= TH Byte MTU: ${__mtu: -4}\n\n"
     set -x
     iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${IP}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
