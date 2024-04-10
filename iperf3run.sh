@@ -125,7 +125,7 @@ function wait_interval() {
 
 function gen_csv_tcp() {
   # TCP UP Cleint -> Server
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -143,7 +143,7 @@ function gen_csv_tcp() {
   sleep 2
 
   # TCP DL Server -> Client
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -163,7 +163,7 @@ function gen_csv_tcp() {
 
 function gen_csv_udp() {
   # UDP UP Cleint -> Server
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
   $COMMENT,
   .title,
   .start.test_start.protocol,
@@ -179,7 +179,7 @@ function gen_csv_udp() {
   sleep 2
 
   # UDP DL Server -> Client
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -197,7 +197,7 @@ function gen_csv_udp() {
 
 function gen_csv_th() {
   # TCP TH
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -215,7 +215,7 @@ function gen_csv_th() {
 
 
   # UDP TH
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -232,7 +232,7 @@ function gen_csv_th() {
 
 function gen_csv_th_byte() {
   # TCP TH byte
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -250,7 +250,7 @@ function gen_csv_th_byte() {
 
 
   # UDP TH byte
-  jq --arg COMMENT "${COMMENT}" -r '[
+  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
     $COMMENT,
     .title,
     .start.test_start.protocol,
