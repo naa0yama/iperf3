@@ -3,7 +3,7 @@
 set -e
 
 _arg_server="192.0.2.1"
-INTERVAL_SECOND=5
+INTERVAL_SECOND=60
 PARALLEL_INT=5
 WAIT_SECOND=5
 TEST_TIME=$(date '+%Y-%m-%dT%H%M')
