@@ -2,23 +2,8 @@
 # licence A-GPL3.0 Created by naa0yama
 set -e
 
-if [ -z "$1" ]; then
-    echo "Comment is required."
-    echo "Usage: $(basename "${0}") comment [ all | tcp | udp | th | th_byte ] (192.0.2.1)"
-    exit 1
-fi
-
-set -eu
-COMMENT="${1}"
-ARGS="${2:-all}"
-IP="${3:-192.0.2.1}"
-
-for cmd in "date" "jq" "ip" "routel" "tracepath" "iperf3" "tar" "sort" "gnuplot"
-do
-  type "${cmd}"
-done
-
-INTERVAL_SECOND=60
+_arg_server="192.0.2.1"
+INTERVAL_SECOND=5
 PARALLEL_INT=5
 WAIT_SECOND=5
 TEST_TIME=$(date '+%Y-%m-%dT%H%M')
@@ -30,39 +15,97 @@ CMD_OPTIONS=(
   "--parallel" "${PARALLEL_INT}"
 )
 
-mkdir -p "${TEST_TIME}"
-cd "${TEST_TIME}"
-
-# Gather
-set -x
-ip -j link                > "_ip-link.json"
-ip    link                > "_ip-link.txt"
-ip -j route               > "_ip-route.json"
-ip    route               > "_ip-route.txt"
-routel                    > "_routel.txt"
-tracepath -m 5 -n -b "${IP}" | tee "_tracepath.txt"
-set +x
-
-set +e
-if ping -c 1 "${IP}" > /dev/null 2>&1
-then
-  echo "[OK] Server IP Reachable -> ${IP}"
-else
-  echo "[NG] Server IP Reachable -> ${IP}"
-  set -e
-  exit 1
-fi
-
-function __trap() {
-    set +x
-    echo "terminated by user !!!"
-    rm -rf "../${TEST_TIME}"
-    exit 1
+# stderr にテキストを出力する echo コマンド
+function echo_stderr ()
+{
+  echo "${@}" 1>&2
 }
 
-function time_calc() {
+# エラーと分かるテキストを先頭に付加してメッセージを表示するコマンド
+function die ()
+{
+  echo_stderr "[ERROR] ${1}"
+  test 1 -eq "${2}" && exit 1
+}
+
+function print_help ()
+{
+cat <<EOF
+
+Usage: $(basename "${0}") --comment="mtu1500-nat-mtu1440" --test=all (--server="${_arg_server}")
+
+    --comment string
+                  Comment
+
+    --test    string
+        all       All test (tcp, udp, th, th_byte)
+        tcp       TCP test
+        udp       UDP test
+        th        TCP/UDP throughput test
+        th_byte   TCP/UDP throughput byte per
+
+    --server  string
+        iperf3 server ip (default: "${_arg_server}").
+
+    --csv-dir string
+        CSV only output directory select.
+
+EOF
+exit 1
+}
+
+function __parse_commandline ()
+{
+  while test $# -gt 0
+  do
+    _key="$1"
+    case "$_key" in
+      --comment=*)
+        _arg_comment="${_key##--comment=}"
+        ;;
+      --test=*)
+        _arg_test="${_key##--test=}"
+        ;;
+      --server=*)
+        _arg_server="${_key##--server=}"
+        ;;
+      --csv-dir=*)
+        _arg_csvdir="${_key##--csv-dir=}"
+        ;;
+
+      -h|--help)
+        print_help
+        ;;
+      -h*)
+        print_help
+        ;;
+      *)
+        die "FATAL ERROR: Got an unexpected argument '$1'" 1
+        ;;
+    esac
+    shift
+  done
+
+  test -z "${_arg_comment}" && die "FATAL ERROR: '--comment' is required." 1
+  test -z "${_arg_test}"    && die "FATAL ERROR: '--test' is required."    1
+
+  return 0
+}
+
+function __gather ()
+{
+  ip -j link                            | tee "_ip-link.json"
+  ip    link                            | tee "_ip-link.txt"
+  ip -j route                           | tee "_ip-route.json"
+  ip    route                           | tee "_ip-route.txt"
+  routel                                | tee "_routel.txt"
+  tracepath -m 5 -n -b "${_arg_server}" | tee "_tracepath.txt"
+}
+
+function __time_calc()
+{
   eta_time_int=0
-  case "${1}" in
+  case "${_arg_test}" in
     ("all")
       local eta_time_int_tcp=$(( ${#MTUS[@]} * $(( INTERVAL_SECOND + WAIT_SECOND )) * 2 ))
       local eta_time_int_udp=$(( ${#MTUS[@]} * $(( INTERVAL_SECOND + WAIT_SECOND )) * 2 ))
@@ -125,7 +168,7 @@ function wait_interval() {
 
 function gen_csv_tcp() {
   # TCP UP Cleint -> Server
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -143,7 +186,7 @@ function gen_csv_tcp() {
   sleep 2
 
   # TCP DL Server -> Client
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -163,7 +206,7 @@ function gen_csv_tcp() {
 
 function gen_csv_udp() {
   # UDP UP Cleint -> Server
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
   $COMMENT,
   .title,
   .start.test_start.protocol,
@@ -179,7 +222,7 @@ function gen_csv_udp() {
   sleep 2
 
   # UDP DL Server -> Client
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -197,7 +240,7 @@ function gen_csv_udp() {
 
 function gen_csv_th() {
   # TCP TH
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -215,7 +258,7 @@ function gen_csv_th() {
 
 
   # UDP TH
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -232,7 +275,7 @@ function gen_csv_th() {
 
 function gen_csv_th_byte() {
   # TCP TH byte
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -250,7 +293,7 @@ function gen_csv_th_byte() {
 
 
   # UDP TH byte
-  jq --raw-input --arg COMMENT "${COMMENT}" -r 'fromjson? | [
+  jq --arg COMMENT "${_arg_comment}" -r '[
     $COMMENT,
     .title,
     .start.test_start.protocol,
@@ -268,7 +311,7 @@ function gen_csv_th_byte() {
 function gen_csv() {
   echo "Comment,Title,Protocol,Packetsize(byte),Streams(num),Duration(s),Received(Mbps),Send(Mbps),Jitter(ms),Lost(%),RTT_min(ms),RTT_avg(ms),RTT_max(ms),version" > results.csv
 
-  case "${1}" in
+  case "${_arg_test}" in
     ("all")
       gen_csv_tcp
       gen_csv_udp
@@ -305,14 +348,14 @@ function iperf3_tcp() {
     echo -e "= TCP MTU: ${__mtu: -4}\n\n"
     set -x
     # Client -> Server
-    iperf3 "${CMD_OPTIONS[@]}" -c "${IP}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
+    iperf3 "${CMD_OPTIONS[@]}" -c "${_arg_server}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
       -T "$(date '+%Y-%m-%d %H:%M') TCP UP MTU${__mtu: -4}" --logfile "TCP_UP_MTU${__mtu: -4}.json"
     set +x
     wait_interval
 
     set -x
     # Server -> Client
-    iperf3 "${CMD_OPTIONS[@]}" -c "${IP}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
+    iperf3 "${CMD_OPTIONS[@]}" -c "${_arg_server}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
       -T "$(date '+%Y-%m-%d %H:%M') TCP DL MTU${__mtu: -4}" --logfile "TCP_DL_MTU${__mtu: -4}.json" -R
     set +x
     wait_interval
@@ -327,14 +370,14 @@ function iperf3_udp() {
     echo -e "= UDP MTU: ${__mtu: -4}\n\n"
     set -x
     # Client -> Server
-    iperf3 "${CMD_OPTIONS[@]}" -c "${IP}" -t "${INTERVAL_SECOND}" -l $(( i - 28 )) \
+    iperf3 "${CMD_OPTIONS[@]}" -c "${_arg_server}" -t "${INTERVAL_SECOND}" -l $(( i - 28 )) \
       -T "$(date '+%Y-%m-%d %H:%M') UDP UP MTU${__mtu: -4}" -u -b 200M --logfile "UDP_UP_MTU${__mtu: -4}.json"
     set +x
     wait_interval
 
     set -x
     # Server -> Client
-    iperf3 "${CMD_OPTIONS[@]}" -c "${IP}" -t "${INTERVAL_SECOND}" -l $(( i - 28 )) \
+    iperf3 "${CMD_OPTIONS[@]}" -c "${_arg_server}" -t "${INTERVAL_SECOND}" -l $(( i - 28 )) \
       -T "$(date '+%Y-%m-%d %H:%M') UDP DL MTU${__mtu: -4}" -u -b 200M --logfile "UDP_DL_MTU${__mtu: -4}.json" -R
     set +x
     wait_interval
@@ -348,7 +391,7 @@ function iperf3_th() {
     echo -e "================================================================================"
     echo -e "= TCP throughput: ${__th_bandwidth: -4}M\n\n"
     set -x
-    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${IP}" -t "${INTERVAL_SECOND}" -M $(( 1500 - 40 )) \
+    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${_arg_server}" -t "${INTERVAL_SECOND}" -M $(( 1500 - 40 )) \
       -T "$(date '+%Y-%m-%d %H:%M') TCP TH${__th_bandwidth: -4}M" \
       -b "${th_bandwidth}M" --logfile "TH${__th_bandwidth: -4}M_TCP.json"
     set +x
@@ -356,7 +399,7 @@ function iperf3_th() {
 
     echo -e "UDP throughput: ${__th_bandwidth: -4}M\n\n"
     set -x
-    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${IP}" -t "${INTERVAL_SECOND}" -l $(( 1500 - 28 )) \
+    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${_arg_server}" -t "${INTERVAL_SECOND}" -l $(( 1500 - 28 )) \
       -T "$(date '+%Y-%m-%d %H:%M') UDP TH${__th_bandwidth: -4}M" -u \
       -b "${th_bandwidth}M" --logfile "TH${__th_bandwidth: -4}M_UDP.json"
     set +x
@@ -371,62 +414,94 @@ function iperf3_th_byte() {
     echo -e "================================================================================"
     echo -e "= TH Byte MTU: ${__mtu: -4}\n\n"
     set -x
-    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${IP}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
+    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${_arg_server}" -t "${INTERVAL_SECOND}" -M $(( i - 40 )) \
       -T "$(date '+%Y-%m-%d %H:%M') TCP TH UP MTU${__mtu: -4}" --logfile "TH_TCP_MTU${__mtu: -4}.json"
     set +x
     wait_interval
 
     set -x
-    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${IP}" -t "${INTERVAL_SECOND}" -l $(( i - 28 )) \
+    iperf3 "${CMD_OPTIONS[@]}" --bidir -c "${_arg_server}" -t "${INTERVAL_SECOND}" -l $(( i - 28 )) \
       -T "$(date '+%Y-%m-%d %H:%M') UDP TH DL MTU${__mtu: -4}" -u --logfile "TH_UDP_MTU${__mtu: -4}.json"
     set +x
     wait_interval
   done
 }
 
-function main() {
+function main ()
+{
+  if test -z "${_arg_csvdir}"
+  then
+    mkdir -p "${TEST_TIME}"
+    cd "${TEST_TIME}"
+  else
+    test ! -d "${_arg_csvdir}" && die "FATAL ERROR: --csv-dir=${_arg_csvdir} No such file or directory" 1
+    cd "${_arg_csvdir}"
+  fi
 
-  time_calc "${ARGS}"
+  for cmd in "date" "jq" "ip" "routel" "tracepath" "iperf3" "tar" "sort" "gnuplot"
+  do
+    type "${cmd}"
+  done
 
-  case "${ARGS}" in
-    ("all")
-      iperf3_tcp
-      iperf3_udp
-      iperf3_th
-      iperf3_th_byte
-      gen_csv "${ARGS}"
-      ;;
+  if ping -c 1 "${_arg_server}" > /dev/null 2>&1
+  then
+    echo "[OK] Server IP Reachable -> ${_arg_server}"
+  else
+    echo "[NG] Server IP Reachable -> ${_arg_server}"
+    set -e
+    exit 1
+  fi
 
-    ("tcp")
-      iperf3_tcp
-      gen_csv "${ARGS}"
-      ;;
+  __gather
+  __time_calc
 
-    ("udp")
-      iperf3_udp
-      gen_csv "${ARGS}"
-      ;;
+  if test -z "${_arg_csvdir}"
+  then
+    case "${_arg_test}" in
+      ("all")
+        iperf3_tcp
+        iperf3_udp
+        iperf3_th
+        iperf3_th_byte
+        gen_csv
+        ;;
 
-    ("th")
-      iperf3_th
-      gen_csv "${ARGS}"
-      ;;
+      ("tcp")
+        iperf3_tcp
+        gen_csv
+        ;;
 
-    ("th_byte")
-      iperf3_th_byte
-      gen_csv "${ARGS}"
-      ;;
+      ("udp")
+        iperf3_udp
+        gen_csv
+        ;;
 
-    (*)
-      echo "Error: type emum [ all | tcp | udp | th | th_byte ]"
-      exit 1
-      ;;
-  esac
+      ("th")
+        iperf3_th
+        gen_csv
+        ;;
 
-  echo "Archive... ${TEST_TIME}_iperf3_test.tar.gz"
-  set -x
-  cd ../
-  tar -zcvf "${TEST_TIME}_iperf3_test.tar.gz" "${TEST_TIME}" "$(basename "${0}")"
+      ("th_byte")
+        iperf3_th_byte
+        gen_csv
+        ;;
+
+      (*)
+        print_help
+        ;;
+    esac
+  else
+    gen_csv
+  fi
+
+  if test -z "${_arg_csvdir}"
+  then
+    echo "Archive... ${TEST_TIME}_iperf3_test.tar.gz"
+    set -x
+    cd ../
+    tar -zcvf "${TEST_TIME}_iperf3_test.tar.gz" "${TEST_TIME}" "$(basename "${0}")"
+  fi
 }
 
+__parse_commandline "$@"
 main "${ARGS}" 2>&1 | tee "$(basename "${0}" .sh).log"
