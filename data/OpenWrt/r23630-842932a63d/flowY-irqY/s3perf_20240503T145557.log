@@ -1,0 +1,3004 @@
++ __PID=46511
++ __RCLONE_OPTS='--log-level INFO --stats=10s --stats-log-level INFO --use-json-log'
++ __LOG_DIR=logs/46511
++ mkdir -p logs/46511
++ rm -rfv /mnt/blockstorage/dist
++ trap 'rm -rf "/mnt/blockstorage/dist"' 1 2 3 15
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sg-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/00001m
+
+real	0m17.827s
+user	0m1.263s
+sys	0m0.754s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/00001m
+
+
+
+
+download e2-s3perf-20240501-sg:e2-s3perf-20240501-sg to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sg-00001m-46511-dl.json copy e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/00001m /mnt/blockstorage/dist/00001m
+
+real	0m9.743s
+user	0m0.957s
+sys	0m0.730s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sg-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/02000m
+
+real	3m43.978s
+user	1m9.061s
+sys	1m13.717s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/02000m
+
+
+
+
+download e2-s3perf-20240501-sg:e2-s3perf-20240501-sg to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sg-02000m-46511-dl.json copy e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/02000m /mnt/blockstorage/dist/02000m
+
+real	2m13.683s
+user	0m36.684s
+sys	0m46.196s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sg-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/10000m
+
+real	36m7.499s
+user	5m26.548s
+sys	5m28.077s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/10000m
+
+
+
+
+download e2-s3perf-20240501-sg:e2-s3perf-20240501-sg to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sg-10000m-46511-dl.json copy e2-s3perf-20240501-sg:e2-s3perf-20240501-sg/10000m /mnt/blockstorage/dist/10000m
+
+real	10m6.017s
+user	2m39.149s
+sys	2m51.674s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sj22-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/00001m
+
+real	0m12.063s
+user	0m0.982s
+sys	0m0.542s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/00001m
+
+
+
+
+download e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22 to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sj22-00001m-46511-dl.json copy e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/00001m /mnt/blockstorage/dist/00001m
+
+real	0m6.247s
+user	0m0.628s
+sys	0m0.486s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sj22-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/02000m
+
+real	3m14.217s
+user	1m1.834s
+sys	0m59.341s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/02000m
+
+
+
+
+download e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22 to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sj22-02000m-46511-dl.json copy e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/02000m /mnt/blockstorage/dist/02000m
+
+real	2m32.137s
+user	0m31.702s
+sys	0m31.307s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sj22-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/10000m
+
+real	15m49.220s
+user	5m11.704s
+sys	4m57.657s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/10000m
+
+
+
+
+download e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22 to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-sj22-10000m-46511-dl.json copy e2-s3perf-20240501-sj22:e2-s3perf-20240501-sj22/10000m /mnt/blockstorage/dist/10000m
+
+real	10m59.896s
+user	2m39.437s
+sys	2m51.001s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-la:e2-s3perf-20240501-la/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-la-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-la:e2-s3perf-20240501-la/00001m
+
+real	0m11.678s
+user	0m1.013s
+sys	0m0.506s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-la:e2-s3perf-20240501-la/00001m
+
+
+
+
+download e2-s3perf-20240501-la:e2-s3perf-20240501-la to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-la-00001m-46511-dl.json copy e2-s3perf-20240501-la:e2-s3perf-20240501-la/00001m /mnt/blockstorage/dist/00001m
+
+real	0m6.550s
+user	0m0.639s
+sys	0m0.416s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-la:e2-s3perf-20240501-la/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-la-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-la:e2-s3perf-20240501-la/02000m
+
+real	3m10.942s
+user	1m1.728s
+sys	0m56.780s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-la:e2-s3perf-20240501-la/02000m
+
+
+
+
+download e2-s3perf-20240501-la:e2-s3perf-20240501-la to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-la-02000m-46511-dl.json copy e2-s3perf-20240501-la:e2-s3perf-20240501-la/02000m /mnt/blockstorage/dist/02000m
+
+real	1m59.756s
+user	0m30.854s
+sys	0m30.270s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-la:e2-s3perf-20240501-la/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-la-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-la:e2-s3perf-20240501-la/10000m
+
+real	20m9.826s
+user	5m6.298s
+sys	4m45.229s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-la:e2-s3perf-20240501-la/10000m
+
+
+
+
+download e2-s3perf-20240501-la:e2-s3perf-20240501-la to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-la-10000m-46511-dl.json copy e2-s3perf-20240501-la:e2-s3perf-20240501-la/10000m /mnt/blockstorage/dist/10000m
+
+real	12m11.045s
+user	2m34.720s
+sys	2m39.567s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ph12-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/00001m
+
+real	0m12.844s
+user	0m0.983s
+sys	0m0.490s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/00001m
+
+
+
+
+download e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12 to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ph12-00001m-46511-dl.json copy e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/00001m /mnt/blockstorage/dist/00001m
+
+real	0m9.720s
+user	0m0.647s
+sys	0m0.375s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ph12-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/02000m
+
+real	8m1.992s
+user	1m7.104s
+sys	1m9.702s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/02000m
+
+
+
+
+download e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12 to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ph12-02000m-46511-dl.json copy e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/02000m /mnt/blockstorage/dist/02000m
+
+real	2m24.841s
+user	0m35.444s
+sys	0m44.012s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ph12-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/10000m
+
+real	26m46.556s
+user	5m47.181s
+sys	6m18.730s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/10000m
+
+
+
+
+download e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12 to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ph12-10000m-46511-dl.json copy e2-s3perf-20240501-ph12:e2-s3perf-20240501-ph12/10000m /mnt/blockstorage/dist/10000m
+
+real	14m0.206s
+user	3m5.543s
+sys	3m58.586s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-or4-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/00001m
+
+real	0m24.347s
+user	0m1.272s
+sys	0m0.973s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/00001m
+
+
+
+
+download e2-s3perf-20240501-or4:e2-s3perf-20240501-or4 to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-or4-00001m-46511-dl.json copy e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/00001m /mnt/blockstorage/dist/00001m
+
+real	0m9.345s
+user	0m1.004s
+sys	0m0.876s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-or4-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/02000m
+
+real	7m16.792s
+user	1m9.721s
+sys	1m15.326s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/02000m
+
+
+
+
+download e2-s3perf-20240501-or4:e2-s3perf-20240501-or4 to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-or4-02000m-46511-dl.json copy e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/02000m /mnt/blockstorage/dist/02000m
+
+real	2m46.091s
+user	0m37.558s
+sys	0m46.429s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-or4-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/10000m
+
+real	21m49.155s
+user	5m48.267s
+sys	6m22.446s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/10000m
+
+
+
+
+download e2-s3perf-20240501-or4:e2-s3perf-20240501-or4 to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-or4-10000m-46511-dl.json copy e2-s3perf-20240501-or4:e2-s3perf-20240501-or4/10000m /mnt/blockstorage/dist/10000m
+
+real	14m35.290s
+user	3m8.372s
+sys	4m0.980s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-da:e2-s3perf-20240501-da/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-da-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-da:e2-s3perf-20240501-da/00001m
+
+real	0m14.709s
+user	0m1.233s
+sys	0m0.834s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-da:e2-s3perf-20240501-da/00001m
+
+
+
+
+download e2-s3perf-20240501-da:e2-s3perf-20240501-da to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-da-00001m-46511-dl.json copy e2-s3perf-20240501-da:e2-s3perf-20240501-da/00001m /mnt/blockstorage/dist/00001m
+
+real	0m12.782s
+user	0m0.904s
+sys	0m0.598s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-da:e2-s3perf-20240501-da/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-da-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-da:e2-s3perf-20240501-da/02000m
+
+real	7m18.482s
+user	1m9.713s
+sys	1m12.644s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-da:e2-s3perf-20240501-da/02000m
+
+
+
+
+download e2-s3perf-20240501-da:e2-s3perf-20240501-da to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-da-02000m-46511-dl.json copy e2-s3perf-20240501-da:e2-s3perf-20240501-da/02000m /mnt/blockstorage/dist/02000m
+
+real	2m25.776s
+user	0m34.428s
+sys	0m43.387s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-da:e2-s3perf-20240501-da/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-da-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-da:e2-s3perf-20240501-da/10000m
+
+real	36m28.470s
+user	5m44.020s
+sys	6m5.610s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-da:e2-s3perf-20240501-da/10000m
+
+
+
+
+download e2-s3perf-20240501-da:e2-s3perf-20240501-da to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-da-10000m-46511-dl.json copy e2-s3perf-20240501-da:e2-s3perf-20240501-da/10000m /mnt/blockstorage/dist/10000m
+
+real	14m8.433s
+user	3m2.709s
+sys	3m56.838s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ch-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/00001m
+
+real	0m19.177s
+user	0m1.281s
+sys	0m0.800s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/00001m
+
+
+
+
+download e2-s3perf-20240501-ch:e2-s3perf-20240501-ch to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ch-00001m-46511-dl.json copy e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/00001m /mnt/blockstorage/dist/00001m
+
+real	0m50.225s
+user	0m1.204s
+sys	0m1.055s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ch-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/02000m
+
+real	4m12.612s
+user	1m9.456s
+sys	1m12.995s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/02000m
+
+
+
+
+download e2-s3perf-20240501-ch:e2-s3perf-20240501-ch to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ch-02000m-46511-dl.json copy e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/02000m /mnt/blockstorage/dist/02000m
+
+real	10m28.188s
+user	0m50.254s
+sys	1m5.547s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ch-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/10000m
+
+real	19m28.693s
+user	5m38.323s
+sys	6m9.106s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/10000m
+
+
+
+
+download e2-s3perf-20240501-ch:e2-s3perf-20240501-ch to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ch-10000m-46511-dl.json copy e2-s3perf-20240501-ch:e2-s3perf-20240501-ch/10000m /mnt/blockstorage/dist/10000m
+
+real	25m41.616s
+user	3m28.561s
+sys	4m32.160s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-va:e2-s3perf-20240501-va/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-va-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-va:e2-s3perf-20240501-va/00001m
+
+real	0m16.984s
+user	0m1.180s
+sys	0m0.911s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-va:e2-s3perf-20240501-va/00001m
+
+
+
+
+download e2-s3perf-20240501-va:e2-s3perf-20240501-va to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-va-00001m-46511-dl.json copy e2-s3perf-20240501-va:e2-s3perf-20240501-va/00001m /mnt/blockstorage/dist/00001m
+
+real	0m8.344s
+user	0m0.857s
+sys	0m0.614s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-va:e2-s3perf-20240501-va/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-va-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-va:e2-s3perf-20240501-va/02000m
+
+real	7m36.166s
+user	1m9.662s
+sys	1m16.640s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-va:e2-s3perf-20240501-va/02000m
+
+
+
+
+download e2-s3perf-20240501-va:e2-s3perf-20240501-va to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-va-02000m-46511-dl.json copy e2-s3perf-20240501-va:e2-s3perf-20240501-va/02000m /mnt/blockstorage/dist/02000m
+
+real	2m50.223s
+user	0m36.341s
+sys	0m44.017s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-va:e2-s3perf-20240501-va/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-va-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-va:e2-s3perf-20240501-va/10000m
+
+real	49m43.482s
+user	5m31.033s
+sys	5m38.085s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-va:e2-s3perf-20240501-va/10000m
+
+
+
+
+download e2-s3perf-20240501-va:e2-s3perf-20240501-va to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-va-10000m-46511-dl.json copy e2-s3perf-20240501-va:e2-s3perf-20240501-va/10000m /mnt/blockstorage/dist/10000m
+
+real	12m58.639s
+user	2m31.012s
+sys	2m31.638s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ca-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/00001m
+
+real	0m18.505s
+user	0m0.986s
+sys	0m0.496s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/00001m
+
+
+
+
+download e2-s3perf-20240501-ca:e2-s3perf-20240501-ca to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ca-00001m-46511-dl.json copy e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/00001m /mnt/blockstorage/dist/00001m
+
+real	0m13.582s
+user	0m0.664s
+sys	0m0.384s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ca-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/02000m
+
+real	3m55.430s
+user	0m59.258s
+sys	0m52.381s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/02000m
+
+
+
+
+download e2-s3perf-20240501-ca:e2-s3perf-20240501-ca to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ca-02000m-46511-dl.json copy e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/02000m /mnt/blockstorage/dist/02000m
+
+real	2m23.570s
+user	0m29.765s
+sys	0m27.127s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ca-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/10000m
+
+real	20m25.757s
+user	4m55.530s
+sys	4m23.261s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/10000m
+
+
+
+
+download e2-s3perf-20240501-ca:e2-s3perf-20240501-ca to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ca-10000m-46511-dl.json copy e2-s3perf-20240501-ca:e2-s3perf-20240501-ca/10000m /mnt/blockstorage/dist/10000m
+
+real	12m49.187s
+user	2m30.946s
+sys	2m26.906s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-mi-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/00001m
+
+real	0m29.438s
+user	0m0.938s
+sys	0m0.534s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/00001m
+
+
+
+
+download e2-s3perf-20240501-mi:e2-s3perf-20240501-mi to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-mi-00001m-46511-dl.json copy e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/00001m /mnt/blockstorage/dist/00001m
+
+real	1m10.912s
+user	0m0.800s
+sys	0m0.757s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-mi-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/02000m
+
+real	5m27.216s
+user	0m58.512s
+sys	0m51.276s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/02000m
+
+
+
+
+download e2-s3perf-20240501-mi:e2-s3perf-20240501-mi to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-mi-02000m-46511-dl.json copy e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/02000m /mnt/blockstorage/dist/02000m
+
+real	22m17.694s
+user	0m46.059s
+sys	0m56.494s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-mi-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/10000m
+
+real	24m8.376s
+user	4m56.826s
+sys	4m27.593s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/10000m
+
+
+
+
+download e2-s3perf-20240501-mi:e2-s3perf-20240501-mi to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-mi-10000m-46511-dl.json copy e2-s3perf-20240501-mi:e2-s3perf-20240501-mi/10000m /mnt/blockstorage/dist/10000m
+
+real	110m52.727s
+user	3m57.333s
+sys	5m16.549s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ldn-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/00001m
+
+real	1m11.932s
+user	0m0.962s
+sys	0m0.607s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/00001m
+
+
+
+
+download e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ldn-00001m-46511-dl.json copy e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/00001m /mnt/blockstorage/dist/00001m
+
+real	0m33.635s
+user	0m0.716s
+sys	0m0.473s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ldn-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/02000m
+
+real	5m6.408s
+user	1m0.384s
+sys	0m54.353s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/02000m
+
+
+
+
+download e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ldn-02000m-46511-dl.json copy e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/02000m /mnt/blockstorage/dist/02000m
+
+real	2m44.141s
+user	0m29.800s
+sys	0m28.123s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ldn-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/10000m
+
+real	29m35.434s
+user	5m4.467s
+sys	4m38.661s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/10000m
+
+
+
+
+download e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ldn-10000m-46511-dl.json copy e2-s3perf-20240501-ldn:e2-s3perf-20240501-ldn/10000m /mnt/blockstorage/dist/10000m
+
+real	15m12.901s
+user	2m32.870s
+sys	2m34.115s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-par:e2-s3perf-20240501-par/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-par-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-par:e2-s3perf-20240501-par/00001m
+
+real	0m29.478s
+user	0m1.016s
+sys	0m0.488s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-par:e2-s3perf-20240501-par/00001m
+
+
+
+
+download e2-s3perf-20240501-par:e2-s3perf-20240501-par to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-par-00001m-46511-dl.json copy e2-s3perf-20240501-par:e2-s3perf-20240501-par/00001m /mnt/blockstorage/dist/00001m
+
+real	1m31.812s
+user	0m0.919s
+sys	0m0.568s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-par:e2-s3perf-20240501-par/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-par-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-par:e2-s3perf-20240501-par/02000m
+
+real	9m1.717s
+user	1m1.949s
+sys	0m53.879s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-par:e2-s3perf-20240501-par/02000m
+
+
+
+
+download e2-s3perf-20240501-par:e2-s3perf-20240501-par to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-par-02000m-46511-dl.json copy e2-s3perf-20240501-par:e2-s3perf-20240501-par/02000m /mnt/blockstorage/dist/02000m
+
+real	17m15.528s
+user	0m39.195s
+sys	0m42.597s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-par:e2-s3perf-20240501-par/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-par-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-par:e2-s3perf-20240501-par/10000m
+
+real	44m45.693s
+user	5m5.025s
+sys	4m35.986s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-par:e2-s3perf-20240501-par/10000m
+
+
+
+
+download e2-s3perf-20240501-par:e2-s3perf-20240501-par to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-par-10000m-46511-dl.json copy e2-s3perf-20240501-par:e2-s3perf-20240501-par/10000m /mnt/blockstorage/dist/10000m
+
+real	23m26.390s
+user	2m44.047s
+sys	2m48.501s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ie-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/00001m
+
+real	0m24.884s
+user	0m0.920s
+sys	0m0.589s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/00001m
+
+
+
+
+download e2-s3perf-20240501-ie:e2-s3perf-20240501-ie to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ie-00001m-46511-dl.json copy e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/00001m /mnt/blockstorage/dist/00001m
+
+real	0m23.028s
+user	0m0.683s
+sys	0m0.495s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ie-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/02000m
+
+real	5m20.164s
+user	0m59.233s
+sys	0m51.730s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/02000m
+
+
+
+
+download e2-s3perf-20240501-ie:e2-s3perf-20240501-ie to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ie-02000m-46511-dl.json copy e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/02000m /mnt/blockstorage/dist/02000m
+
+real	3m27.823s
+user	0m31.067s
+sys	0m29.555s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ie-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/10000m
+
+real	40m42.906s
+user	5m2.687s
+sys	4m33.510s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/10000m
+
+
+
+
+download e2-s3perf-20240501-ie:e2-s3perf-20240501-ie to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-ie-10000m-46511-dl.json copy e2-s3perf-20240501-ie:e2-s3perf-20240501-ie/10000m /mnt/blockstorage/dist/10000m
+
+real	22m41.553s
+user	2m38.535s
+sys	2m45.509s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-fra-00001m-46511-up.json copy /mnt/blockstorage/00001m e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/00001m
+
+real	1m40.582s
+user	0m0.941s
+sys	0m0.727s
++ set +x
+upload /mnt/blockstorage/00001m to e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/00001m
+
+
+
+
+download e2-s3perf-20240501-fra:e2-s3perf-20240501-fra to /mnt/blockstorage/00001m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-fra-00001m-46511-dl.json copy e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/00001m /mnt/blockstorage/dist/00001m
+
+real	13m59.130s
+user	0m2.501s
+sys	0m2.454s
++ set +x
+
+
+
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-fra-02000m-46511-up.json copy /mnt/blockstorage/02000m e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/02000m
+
+real	5m53.229s
+user	1m0.894s
+sys	0m51.805s
++ set +x
+upload /mnt/blockstorage/02000m to e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/02000m
+
+
+
+
+download e2-s3perf-20240501-fra:e2-s3perf-20240501-fra to /mnt/blockstorage/02000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-fra-02000m-46511-dl.json copy e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/02000m /mnt/blockstorage/dist/02000m
+
+real	3m18.991s
+user	0m30.562s
+sys	0m29.222s
++ set +x
+
+
+
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-fra-10000m-46511-up.json copy /mnt/blockstorage/10000m e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/10000m
+
+real	30m45.754s
+user	5m3.116s
+sys	4m35.924s
++ set +x
+upload /mnt/blockstorage/10000m to e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/10000m
+
+
+
+
+download e2-s3perf-20240501-fra:e2-s3perf-20240501-fra to /mnt/blockstorage/10000m
+
++ rclone --log-level INFO --stats=10s --stats-log-level INFO --use-json-log --log-file logs/46511/e2-s3perf-20240501-fra-10000m-46511-dl.json copy e2-s3perf-20240501-fra:e2-s3perf-20240501-fra/10000m /mnt/blockstorage/dist/10000m
+
+real	18m25.858s
+user	2m37.335s
+sys	2m40.826s
++ set +x
+
+
+
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_5'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_4'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_2'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_1'
+removed '/mnt/blockstorage/dist/02000m/testfile_02G_3'
+removed directory '/mnt/blockstorage/dist/02000m'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_5'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_4'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_1'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_3'
+removed '/mnt/blockstorage/dist/10000m/testfile_10G_2'
+removed directory '/mnt/blockstorage/dist/10000m'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_87'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_55'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_83'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_108'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_103'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_91'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_64'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_16'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_112'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_49'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_39'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_11'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_62'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_30'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_84'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_9'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_33'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_113'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_71'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_86'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_77'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_21'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_19'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_126'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_107'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_68'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_5'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_90'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_22'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_26'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_117'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_56'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_104'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_20'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_46'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_13'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_75'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_82'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_10'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_119'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_58'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_29'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_61'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_105'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_96'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_32'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_41'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_60'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_12'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_6'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_65'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_125'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_127'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_106'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_101'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_45'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_53'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_121'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_111'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_76'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_69'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_110'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_35'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_116'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_66'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_48'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_23'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_34'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_123'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_51'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_124'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_70'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_27'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_57'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_98'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_28'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_99'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_128'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_81'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_52'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_15'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_85'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_67'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_100'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_118'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_38'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_114'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_97'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_120'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_14'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_94'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_25'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_88'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_92'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_59'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_44'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_89'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_54'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_40'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_18'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_95'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_2'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_43'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_36'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_47'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_3'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_122'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_42'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_74'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_78'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_79'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_37'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_80'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_115'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_1'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_50'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_63'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_24'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_31'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_102'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_8'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_4'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_7'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_72'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_93'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_109'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_17'
+removed '/mnt/blockstorage/dist/00001m/testfile_01M_73'
+removed directory '/mnt/blockstorage/dist/00001m'
+removed directory '/mnt/blockstorage/dist'
+Logging dir... logs/46511
